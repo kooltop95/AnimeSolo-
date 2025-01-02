@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>AnimeSolo - Смотреть аниме онлайн</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #0a0a0a;
+            color: white;
+        }
+        
+        .header {
+            background-color: #1a1a2e;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        
+        .logo {
+            color: #4169E1;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        
+        .nav {
+            background-color: #16213e;
+            padding: 1rem;
+        }
+        
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            margin-right: 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+        }
+        
+        .nav-link:hover {
+            background-color: #4169E1;
+        }
+        
+        .main-content {
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+        
+        .anime-card {
+            background-color: #1a1a2e;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+        
+        .anime-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .anime-image {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+        }
+        
+        .anime-info {
+            padding: 1rem;
+        }
+        
+        .anime-title {
+            color: #4169E1;
+            margin-bottom: 0.5rem;
+        }
+        
+        .episode-count {
+            color: #888;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">AnimeSolo</div>
+    </header>
+    
+    <nav class="nav">
+        <a href="#" class="nav-link">Главная</a>
+        <a href="#" class="nav-link">Каталог аниме</a>
+        <a href="#" class="nav-link">Новинки</a>
+        <a href="#" class="nav-link">Популярное</a>
+        <a href="#" class="nav-link">Форум</a>
+    </nav>
+    
+    <main class="main-content">
+        <div class="anime-card">
+            <img src="/api/placeholder/200/280" alt="Аниме 1" class="anime-image">
+            <div class="anime-info">
+                <h3 class="anime-title">Атака титанов</h3>
+                <p class="episode-count">Серий: 25</p>
+            </div>
+        </div>
+        
+        <div class="anime-card">
+            <img src="/api/placeholder/200/280" alt="Аниме 2" class="anime-image">
+            <div class="anime-info">
+                <h3 class="anime-title">Клинок, рассекающий демонов</h3>
+                <p class="episode-count">Серий: 26</p>
+            </div>
+        </div>
+        
+        <div class="anime-card">
+            <img src="/api/placeholder/200/280" alt="Аниме 3" class="anime-image">
+            <div class="anime-info">
+                <h3 class="anime-title">Моя геройская академия</h3>
+                <p class="episode-count">Серий: 25</p>
+            </div>
+        </div>
+        
+        <div class="anime-card">
+            <img src="/api/placeholder/200/280" alt="Аниме 4" class="anime-image">
+            <div class="anime-info">
+                <h3 class="anime-title">Ван Пис</h3>
+                <p class="episode-count">Серий: 1000+</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
